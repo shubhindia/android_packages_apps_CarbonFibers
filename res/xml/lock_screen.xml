@@ -31,7 +31,15 @@
         <intent android:action="android.intent.action.MAIN"
             android:targetPackage="com.android.systemui"
             android:targetClass="com.android.systemui.tuner.LockscreenTunerActivity" />
-    </Preference>
+	</Preference>
+     
+         <com.android.settings.carbon.SystemSettingListPreference
+        android:key="screen_off_animation"
+        android:title="@string/screen_off_animation_title"
+        android:dialogTitle="@string/screen_off_animation_title"
+        android:entries="@array/screen_off_animation_entries"
+        android:entryValues="@array/screen_off_animation_values"
+        android:defaultValue="0" />
  </PreferenceCategory>
 
  <PreferenceCategory
